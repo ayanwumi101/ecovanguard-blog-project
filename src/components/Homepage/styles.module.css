@@ -1,0 +1,36 @@
+.container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    max-width: 100%;
+    text-align: center;
+}
+
+.hero_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    height: 400px;
+}
+
+.home_button{
+    background: transparent;
+    border: 1.5px solid black;
+    background-color: black;
+    padding: 10px 14px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+}
+
+.home_button:hover{
+    background-color: #fefefe;
+    border: 1.5px solid black;
+    color: black;
+}

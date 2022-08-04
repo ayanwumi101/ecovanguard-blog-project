@@ -1,0 +1,21 @@
+.posts_container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1000px;
+    margin: 35px auto;
+    flex-wrap: wrap;
+    text-align: center;
+    color:  #193375;;
+}
+.container{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .posts_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

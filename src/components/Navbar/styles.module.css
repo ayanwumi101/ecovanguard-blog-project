@@ -1,0 +1,23 @@
+.nav_container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.brand{
+    max-width: 200px;
+}
+
+.brand img{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
