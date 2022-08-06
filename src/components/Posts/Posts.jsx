@@ -3,6 +3,8 @@ import client from '../../client'
 import Post from '../Post/Post';
 import styles from './styles.module.css'
 import Fade from 'react-reveal/Fade'
+import RelatedPost from '../../RelatedPost/RelatedPost';
+
 
 
 const Posts = () => {
@@ -27,14 +29,30 @@ const Posts = () => {
     ).then((data) => setPost(data)).catch((console.error));
   }, [])
   console.log(post);
+  const date = new Date().toDateString();
   return (
     <div className={styles.container}>
-        <h2>Ecovanguard's Latest Blog Posts</h2>
-        <Fade left>
-        <div className={styles.posts_container}>
-            {post.map((post) => <Post post={post} key={post.slug.current} />)}
+        <h2>Latest Posts</h2>
+        <p>{date}</p>
+        <div className={styles.overall_container}>
+            <div className={styles.posts_container}>
+                <Fade left>
+                  {post.map((post) => <Post post={post} key={post.slug.current} />)}
+                </Fade>
+            </div>
+            
+            
+            <div className={styles.related}>
+                <div className="heading">
+                  <h3>Related News</h3>
+                  <div className={styles.line}></div>
+                </div>
+                <Fade right>
+                  {post.map((item) => <RelatedPost item={item} key={item.slug.current} />)}
+                </Fade>
+            </div>
+            
         </div>
-        </Fade>
     </div>
   )
 }

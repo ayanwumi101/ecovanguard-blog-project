@@ -13,15 +13,17 @@ const Post = ({post}) => {
   console.log(post);
   // const preview = post.body.substr(0,40);
   return (
-    <div className={styles.post_container}>
-        <div className={styles.image_container}>
-            <img src={post.mainImage.asset.url} alt={post.title} />
+    
+        <div className={styles.post_container}>
+            <div className={styles.image_container}>
+                <img src={post.mainImage.asset.url} alt={post.title} />
+            </div>
+            <div className={styles.post_content}>
+              <h4>{post.title}</h4>
+              <Link to={`/posts/${post.slug.current}`}><button className={styles.read_more}>Read full article</button></Link>
+            </div>
         </div>
-        <div className={styles.post_content}>
-          <h4>{post.title}</h4>
-          <Link to={`/posts/${post.slug.current}`}><button className={styles.read_more}>Read full article</button></Link>
-        </div>
-    </div>
+    
   )
 }
 

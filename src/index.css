@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6f0ff;
+  /* background-color: #e6f0ff; */
 }
 
 code {

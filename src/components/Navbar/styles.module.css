@@ -1,23 +1,59 @@
 .nav_container{
-    max-width: 1000px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+    padding: 0 20px;
 }
 
 .brand{
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .brand img{
     width: 100%;
 }
 
-ul{
-    list-style-type: none;
+.search_container{
+    position: relative;
+    width: 700px;
+    text-align: left;
 }
 
-a{
-    text-decoration: none;
+/* button{
+    background: transparent;
+    border: none;
+} */
+input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius:5px ;
+    background-color: #ededed;
+    padding: 15px 20px 15px 40px;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    color: rgba(211, 211, 211, 0.71);
 }
+
+ .search_icon{
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    color: rgba(0, 0, 0, 0.468);
+}
+
+.user_icon{
+    width: 40px;
+    height: 40px;
+} 
+
+.user_icon img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* input:focus{
+    width: 100%;
+}  */

@@ -1,13 +1,21 @@
 .post_container{
-    max-width: 280px;
+    width: 620px;
     min-height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding-bottom: 13px;
     border: none;
     border-radius: 3px;
-    background-color: #cbd5e19e;
-    color: #0f172a;
+    background-color: white;
+    /* color: #0f172a; */
+    color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column2{
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    padding: 10px;
 }
 
 .post_content{
